@@ -1,0 +1,1004 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+
+$blue: rgba(0,168,255,1);
+$blue-08: rgba(0,168,255,.8);
+$margin: 16px;
+$fontSize: 14px;
+$font-stack: Tahoma, Arial, sans-serif;
+
+/***** FONTS *****/
+
+@font-face {
+    font-family: 'proxima-nova-bold';
+    src: url('../fonts/proximanova/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima-nova-light';
+    src: url('../fonts/proximanova/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***** MAIN *****/
+
+.my-clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.container-fluid {
+	overflow: hidden;
+}
+
+/***** header *****/
+
+#header {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+}
+#my-navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background: transparent;
+	border: 0px;
+	webkit-box-shadow: none;
+				 box-shadow: none;
+}
+.navbar-default .navbar-nav>li:hover>a {
+	color: rgba(255,255,255,.5);
+}
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	font: 18px 'proxima-nova-light', $font-stack;
+}
+.navbar-nav>li>a:hover {
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+#my-navbar-brand {
+	padding: 5px 15px;
+}
+#my-navbar-toggle:hover {
+	background-color: #fff;
+}
+#bs-example-navbar-collapse-1 {
+	background: #fff;
+}
+#bs-example-navbar-collapse-1 li:hover {
+	background: $blue;
+}
+.img-jogging {
+	margin-top: -57px;
+	width: 100%;
+	height: 400px;
+	background: url(../img/jogging.jpg);
+	background-size: cover;
+
+	text-align: center;
+}
+.img-overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,45, 0.9);
+		h4 {
+			color: rgba(255,255,255,.5);
+		}
+}
+.img-jogging h4 {
+	padding-top: 200px;
+}
+.img-jogging h1 {
+	color: #fff;
+}
+
+/***** advantages *****/
+
+#advantages {
+	margin: 0 -30px;
+	max-width: 1170px;
+}
+
+/*adv1*/
+#adv1 {
+	padding: 0 15px;
+	min-height: 200px;
+	background: url(../img/adv1.jpg) no-repeat;
+	background-size: cover;
+		p {
+			padding-left: 15px;
+			margin-bottom: 0;
+			display: inline-block;
+
+			font: 18px 'proxima-nova-light', $font-stack;
+			color: #fff;
+		}
+		span {
+			color: #fff;
+			font-weight: bold;
+			text-align: right;
+		}
+		h4 {
+			margin-top: 25px;
+			float: left;
+			color: #fff;
+			font-weight: bold;
+		}
+}
+.square-wrap {
+	float: right;
+	margin-top: 30px;
+}
+.square {
+	float: left;
+	margin-right: 8px;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #fff;
+}
+.square-wrap .active {
+	background: #fff;
+}
+.square:last-of-type {
+	margin-right: 0;
+}
+.adv1-line {
+	line-height: 58px;
+	border-bottom: 1px solid rgba(247,87,74, .5);
+	font-size: 16px;
+}
+.adv1-line:last-of-type {
+	border-bottom: 0;
+}
+.time {
+	float: right;
+}
+/*adv2*/
+#adv2 {
+	padding-left: 15px;
+	padding-right: 15px;
+	min-height: 200px;
+	background: url(../img/adv2.jpg) no-repeat;
+	background-size: cover;
+
+	color: #fff;
+}
+.adv2-text1 {
+	padding: 20px 0 70px;
+	font-size: 16px;
+}
+.adv2-text2 {
+	margin: 0;
+	font-size: 24px;
+}
+.adv2-text3 {
+	margin: 0;
+	font-size: 32px;
+}
+/*adv3*/
+#adv3 {
+	padding-left: 15px;
+	padding-right: 15px;
+	min-height: 200px;
+	background: url(../img/adv3.jpg) no-repeat;
+	background-size: cover;
+
+	color: #fff;
+		h4 {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			float: left;
+		}
+		h3 {
+			margin-bottom: 50px;
+			font: 22px 'proxima-nova-bold', $font-stack;
+		}
+		p {
+			padding-bottom: 10px;
+			opacity: .8;
+			font: 16px 'proxima-nova-light', $font-stack;
+		}
+}
+
+/***** services *****/
+
+#services {
+	margin: 5px auto 0;
+	max-width: 1170px;
+	text-align: center;
+		h2 {
+			font: 30px 'proxima-nova-bold', $font-stack;
+		}
+		&>h4 {
+			margin-bottom: 50px;
+
+			font: 22px 'proxima-nova-light', $font-stack;
+			color: #bbb;
+		}
+}
+#serv-wrap {
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 270px;
+}
+#serv1,
+#serv2,
+#serv3 {
+	margin-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	min-height: 200px;
+	max-height: 315px;
+	border: 1px solid #ddd;
+		h4 {
+			font: 20px 'proxima-nova-bold', $font-stack;
+		}
+		span {
+			font: 16px/20px 'proxima-nova-regular', $font-stack;
+			color: #999;
+			transition: all 1s ease;
+		}
+}
+#serv2 {
+	img {
+			position: relative;
+			left: -70px;
+		}
+}
+#serv3 {
+	img {
+			position: relative;
+			left: -150px;
+		}
+}
+.img-wrap {
+		position: relative;
+		left: 50%;
+		margin-left: -35px;
+		margin-top: -37px;
+		width: 70px;
+		overflow: hidden;
+		transition: all .5s ease;
+	}
+
+/***** team *****/
+#team {
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #F7F7F7;
+	text-align: center;
+		&>h2 {
+			font: 30px 'proxima-nova-bold', $font-stack;
+			color: #333;
+		}
+		&>h4 {
+			font: 18px 'proxima-nova-light', $font-stack;
+			color: #bbb;
+		}
+}
+#team-wrap {
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 370px;
+}
+.img-team-wrap {
+	position: relative;
+		h3 {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			right: 0;
+			font: 30px 'proxima-nova-bold', $font-stack;
+			color: #fff;
+			transition: opacity .5s ease;
+			z-index: 1;
+		}
+		&>p {
+			position: absolute;
+			top: 75px;
+			left: 0;
+			right: 0;
+			font: 18px 'proxima-nova-regular', $font-stack;
+			color: #ddd;
+			transition: opacity .5s ease;
+			z-index: 1;
+		}
+}
+#team1-wrap,
+#team2-wrap,
+#team3-wrap {
+	& .img-team-wrap:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background: $blue-08;
+		transition: opacity .5s ease;
+	}
+	& .img-team-wrap:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, rgba(0,0,0,.7) 10%, transparent 80%);
+	}
+}
+.team {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 2px 3px #eaeaea;
+	background: #fff;
+		h4 {
+			font-weight: bold;
+		}
+		&>p {
+			color: #ddd;
+		}
+}
+.team-round {
+	position: relative;
+	margin-top: -60px;
+	margin-bottom: 25px;
+	z-index: 1;
+	transition: transform 0.5s ease; 
+	transform: rotateX(0deg);
+}
+.rotate {
+	transition: transform 0.5s ease; 
+	transform: rotateX(360deg);
+}
+.btn-team {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid $blue;
+	color: $blue;
+	transition: all .3s ease;
+		&:hover {
+			background: $blue;
+			color: #fff;
+		}
+}
+
+/***** Pricing *****/
+
+/*lv1*/
+#pricing {
+	padding-top: 50px;
+	text-align: center;
+	background: url(../img/pricing-jogging.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+		h2 {
+			position: relative;
+			font: 28px 'proxima-nova-bold', $font-stack;
+			z-index: 1;
+		}
+		h4 {
+			position: relative;
+			opacity: .8;
+			font: 16px 'proxima-nova-light', $font-stack;
+			z-index: 1;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.3);
+		}
+}
+.box-pricing-wrap-wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 280px;
+	z-index: 1;
+}
+.box-pricing-wrap {
+	margin-top: 70px;
+}
+#box-main-pricing {
+	margin-bottom: 2px;
+	min-height: 200px;
+	max-width: 370px;
+	min-width: 280px;
+	background: $blue;
+		h4 {
+			padding-top: 40px;
+			font: 18px 'proxima-nova-bold', $font-stack;
+		}
+		p {
+			font-size: 24px;
+		}
+		span {
+			font-size: .5em;
+		}
+}
+.btn-pricing {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid rgba(255,255,255,.6);
+	color: rgba(255,255,255,.9);
+	font: 18px 'proxima-nova-regular', $font-stack;
+}
+/*lv2*/
+#box-main-lv2 {
+	margin-bottom: 20px;
+	max-width: 370px;
+	min-width: 280px;
+		ul {
+			padding-top: 35px;
+			padding-bottom: 40px;
+			background: $blue;
+			list-style-type: square;
+			text-align: left;
+			font-size: 18px;
+		}
+}
+/*lv3*/
+#box-main-lv3 {
+	margin-top: -7px;
+	min-height: 200px;
+	background: #bbb;
+	transition: all .5s ease;
+		h4 {
+			padding-top: 40px;
+			font: 18px 'proxima-nova-bold', $font-stack;
+		}
+		p {
+			font-size: 24px;
+		}
+		span {
+			font-size: .5em;
+		}
+}
+/***** tw-block *****/
+
+#tw-block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: $blue;
+	color: #fff;
+	text-align: center;
+		i {
+			margin-bottom: 20px;
+			font-size: 22px;
+		}
+		p {
+			margin-bottom: 20px;
+			opacity: .8;
+			font: 18px/28px 'proxima-nova-light', $font-stack;
+		}
+		span {
+			display: block;
+			color: #93daff;
+		}
+		.square-wrap {
+			display: inline-block;
+			float: none;
+		}
+}
+
+/***** footer *****/
+
+#footer {
+	background: url(../img/jogging.jpg);
+	background-size: cover;
+
+	text-align: center;
+}
+.img-overlay-footer {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,45, 0.9);
+		h4 {
+			color: #fff;
+		}
+		span {
+			color: rgba(255,255,255,.5);
+		}
+}
+#free-trial {
+	margin-bottom: 20px;
+	padding-top: 20px;
+	color: #fff;
+		h4 {
+			margin-top: 0;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p {
+			font-size: 14px;
+			color: #bbb;
+		}
+}
+.btn-trial {
+	display: inline-block;
+	margin: 40px 0;
+	padding: 10px 20px;
+	background: $blue;
+	color: rgba(255,255,255,.9);
+	transition: all .2s ease;
+		&:hover {
+			background: $blue-08;
+		}
+}
+#opn-hours {
+	h4 {
+		color: #fff;
+		font-weight: bold;
+	}
+	p {
+		font-size: 16px;
+		color: #bbb;
+	}
+	span {
+		display: block;
+		font-size: 14px;
+		color: #fff;
+	}
+}
+#footer-bottom {
+	margin-top: 50px;
+}
+#copy {
+	p {
+		color: #545662;
+	}
+	a {
+		font-weight: bold;
+	}
+}
+#social i {
+	margin: 0 10px;
+	color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+	/***** header *****/
+
+	/***** advantages *****/
+#adv1,
+#adv2,
+#adv3 {
+	min-height: 285px;
+}
+#adv1 h4 {
+	margin: 30px 0 60px;
+	font-size: 18px;
+}
+#adv3 {
+	h4 {
+		margin: 30px 0 60px;
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+}
+.adv2-text1 {
+	padding: 30px 0 130px;
+	font-size: 18px;
+}
+.adv2-text3 {
+	font-size: 36px;
+}
+
+	/***** services *****/
+
+	/***** team *****/
+
+/***** Pricing *****/
+.box-pricing-wrap-wrap {
+	width: 320px;
+}
+#box-main-pricing,
+#box-main-lv2,
+#box-main-lv3 {
+	min-width: 320px;
+	}
+/***** tw-block *****/
+	#tw-block {
+		padding-top: 70px;
+		padding-bottom: 90px;
+	}
+	#tw-block {
+	padding-top: 50px;
+	padding-bottom: 50px;
+		i {
+			margin-bottom: 50px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
+/***** footer *****/
+
+}
+
+@media screen and (min-width: 768px) {
+
+	/***** MAIN *****/
+	.bevel {
+		transform: rotate(-5deg);
+		margin: 0 -100px;
+	}
+	.re-bevel {
+		transform: rotate(5deg);
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+
+	/***** header *****/
+	#header {
+		width: 70%;
+		margin-left: 200px;
+		z-index: 1;
+	}
+	.navbar-default .navbar-nav>li>a {
+		color: #fff;
+	}
+	.img-jogging {
+		height: 580px;
+			h4 {
+				padding-top: 200px;
+				font-size: 20px;
+			}
+			h1 {
+				font-size: 32px;
+					&:after {
+						content: '';
+						display: inline-block;
+						width: 5px;
+						height: 30px;
+						background: $blue;
+					}
+			}
+	}
+	#bs-example-navbar-collapse-1 {
+		background: transparent;
+	}
+	/***** advantages *****/
+	#advantages {
+		margin: -140px 0 0;
+	}
+	#adv3 {
+		margin-top: 30px;
+	}
+	/***** services *****/
+	#serv-wrap {
+		max-width: initial;
+	}
+	/***** team *****/
+	#team {
+		padding-bottom: 150px;
+			h2.re-bevel {
+				margin-right: 0;
+				margin-left: 50px;
+			}
+			h4 {
+				margin-right: 0;
+				margin-left: 50px;
+			}
+	}
+	#team-wrap {
+		max-width: 1170px;
+	}
+	.img-overlay {
+		width: 100%;
+		height: 100%;
+			h4 {
+				color: rgba(255,255,255,.5);
+			}
+	}
+	#team1-wrap,
+	#team2-wrap,
+	#team3-wrap {
+		& .img-team-wrap {
+			position: relative;
+				h3 {
+					opacity: 0;
+				}
+				p {
+					opacity: 0;
+				}
+		}
+		&:hover {
+			& .img-team-wrap {
+				position: relative;
+					h3 {
+						opacity: 1;
+					}
+					p {
+						opacity: 1;
+					}
+					&:after {
+						background: none;
+					}
+			}
+			& .img-team-wrap:before {
+				opacity: 1;
+			}
+		}
+	}
+	/***** Pricing *****/
+	#pricing {
+		margin-top: -100px;
+			h2 {
+				font-size: 48px;
+			}
+			h4 {
+				font-size: 24px;
+			}
+	}
+
+	/***** tw-block *****/
+
+	/***** footer *****/
+	#footer {
+		text-align: left;
+	}
+	.footer-wrap {
+		margin: 0 auto;
+		width: 700px;
+	}
+	#free-trial {
+		margin-top: 50px;
+	}
+	#opn-hours {
+		margin-top: 60px;
+			h4 {
+				margin-bottom: 30px;
+					&:after {
+						content: '';
+						display: inline-block;
+						margin-left: 20px;
+						width: 11px;
+						height: 11px;
+						border-radius: 50%;
+						background: #4CAF50;
+						box-shadow: 0 0 0 3px rgba(76,175,80,.3);
+					}
+			}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	/***** header *****/
+	.img-jogging {
+		height: 700px;
+			h4 {
+				padding-top: 300px;
+				font-size: 24px;
+			}
+			h1 {
+				font-size: 42px;
+					&:after {
+							height: 45px;
+						}
+			}
+	}
+	/***** advantages *****/
+	#adv3 {
+		margin-top: 0;
+	}
+
+		/***** services *****/
+	#services {
+		margin-top: 150px;
+		margin-bottom: 50px;
+		h2 {
+			font-size: 48px;
+			}
+		&>h4 {
+			margin-bottom: 150px;
+		}
+	}
+	#serv1,
+	#serv2,
+	#serv3 {
+		padding-right: 44px;
+		padding-left: 44px;
+		min-height: 315px;
+			h4 {
+				margin-top: 55px;
+				font-size: 24px;
+			}
+			&:hover {
+				border: 1px solid $blue;
+				span {
+					opacity: 1;
+				}
+				.img-wrap {
+					margin-top: -37px;
+				}
+			}
+			span {
+				opacity: 0;
+				font-size: 18px;
+				line-height: 26px;
+				transition: all 1s ease;
+			}
+	}
+	.img-wrap {
+			margin-top: 65px;
+	}
+		/***** team *****/
+	#team {
+		padding-top: 100px;
+			h2.re-bevel {
+				margin-right: 0;
+				font-size: 48px;
+			}
+			h4 {
+				margin-right: 0;
+				font-size: 24px;
+			}
+	}
+	.img-team-wrap {
+		h3 {
+			top: 30px;
+		}
+		p {
+			top: 90px;
+		}
+	}
+
+	/***** Pricing *****/
+	 #pricing {
+		min-height: 1140px;
+		margin-top: -110px;
+			h2 {
+				font-size: 48px;
+			}
+			h4 {
+				font-size: 24px;
+			}
+		}
+		.box-pricing-wrap-wrap {
+			margin: 0 auto;
+			width: auto;
+			max-width: 1170px;
+		}
+	.box-pricing-wrap {
+		float: right;
+		margin-top: 230px;
+		margin-right: 320px;
+		max-width: 650px;
+		&:hover {
+				margin-right: 0px;
+					#box-main-lv2 {
+						display: inline-block;
+						opacity: 1;
+							&:hover {
+								#box-main-lv3 {
+									opacity: 1;
+								}
+							}
+						}
+			}
+	}
+	#box-main-pricing {
+		float: left;
+	}
+	#box-main-lv2 {
+		float: left;
+		display: none;
+	}
+	#box-main-lv3 {
+		margin-top: -10px;
+		float: left;
+		opacity: 0;
+	}
+
+	/***** tw-block *****/
+	#tw-block {
+		padding-top: 140px;
+		padding-bottom: 125px;
+	}
+
+	/***** footer *****/
+	.footer-wrap {
+		margin: 0 auto;
+		width: 900px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	/***** header *****/
+	.img-jogging {
+		height: 1140px;
+		margin-top: -240px;
+		padding-bottom: -240px;
+			h4 {
+				padding-top: 500px;
+				font-size: 36px;
+			}
+			h1 {
+				font-size: 60px;
+			}
+	}
+	.img-overlay {
+		margin-top: -240px;
+		padding-bottom: 240px;
+	}
+	/***** advantages *****/
+	#advantages {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#adv3 {
+		h3 {
+			font-size: 26px;
+		}
+	}
+
+	/***** services *****/
+	#services {
+		margin: 150px auto 175px;
+		h2 {
+			font-size: 48px;
+		}
+	}
+	/***** team *****/
+	#team {
+		padding-top: 200px;
+		padding-bottom: 350px;
+	}
+	#team-wrap {
+		margin-top: 150px;
+	}
+/***** Pricing *****/
+	#pricing {
+		margin-top: -210px;
+	}
+/***** tw-block *****/
+
+/***** footer *****/
+#footer {
+	background: url(../img/jogging.jpg) 0 -800px;
+}
+	.footer-wrap {
+		margin: 0 auto;
+		width: 1170px;
+	}
+}
